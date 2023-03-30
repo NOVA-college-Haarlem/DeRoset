@@ -34,10 +34,11 @@ include 'nav.php';
             background-color: #0062cc;
         }
     </style>
-</head>
+</head> 
 
 <body>
     <h1>Bericht Verzonden!</h1>
+    berichte
     <button onclick="window.location.href='index.php'" style="background-color:#B2D2A4;">Neem me terug</button>
 </body>
 
