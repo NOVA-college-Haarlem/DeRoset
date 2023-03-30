@@ -34,7 +34,7 @@ include 'nav.php';
             background-color: #0062cc;
         }
     </style>
-</head> 
+</head>
 
 <body>
     <h1>Bericht Verzonden!</h1>
