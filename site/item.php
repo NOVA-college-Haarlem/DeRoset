@@ -21,7 +21,7 @@ $flavor = $stmt->fetch();
         width: 75%;
         height: auto;
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
     }
 
     h1 {

@@ -41,4 +41,4 @@ include 'nav.php';
     <button onclick="window.location.href='index.php'" style="background-color:#B2D2A4;">Neem me terug</button>
 </body>
 
-</html>
+</html> 

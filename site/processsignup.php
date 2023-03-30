@@ -17,7 +17,7 @@ $email = strtolower($email);
 $stmt = $conn->prepare("INSERT INTO user (email, password, firstname, lastname, adress, role)
 VALUES ('$email', '$password','$firstname', '$lastname', '$address', 'customer')");
 
-$stmt->execute();
+$stmt->execute(); 
 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $flavor = $stmt->fetchAll();
 

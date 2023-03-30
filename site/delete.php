@@ -6,3 +6,4 @@ $stmt = $conn->prepare("DELETE FROM user WHERE id = $id");
 $stmt->execute();
 
 header('location:logout.php');
+ 

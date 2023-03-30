@@ -17,7 +17,7 @@ if ($rowCount == 0) {
     session_start();
     $_SESSION['logedin'] = true;
     $_SESSION['user_id'] = $user['id'];
-    $_SESSION['email'] = $user['email'];
+    $_SESSION['email'] = $user['email']; 
     $_SESSION['firstname'] = $user['firstname'];
     $_SESSION['lastname'] = $user['lastname'];
     $_SESSION['address'] = $user['adress'];

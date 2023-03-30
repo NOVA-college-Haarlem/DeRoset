@@ -18,7 +18,7 @@
         display: block;
         margin-bottom: 8px;
     }
-
+ 
     input[type="text"],
     input[type="email"],
     input[type="password"],

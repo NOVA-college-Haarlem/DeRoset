@@ -17,7 +17,7 @@ $flavor = $stmt->fetchAll();
     <title>Producten</title>
 </head>
 
-<body>
+<body> 
     <?php
     foreach ($flavor as $flavor) {
     ?>

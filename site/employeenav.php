@@ -18,7 +18,7 @@ session_start();
     .dropdown {
         position: relative;
         display: inline-block;
-    }
+    } 
 
     .dropdown-content {
         display: none;

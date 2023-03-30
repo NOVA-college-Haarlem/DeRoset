@@ -49,7 +49,7 @@ include 'nav.php' ?>
             text-decoration: none;
 
         }
-
+ 
         nav li a:hover {
             background-color: #94C973;
         }

@@ -21,7 +21,7 @@ $email = $user['email'];
 
 <head>
     <title>Mijn Gegevens</title>
-</head>
+</head> 
 <style>
     p {
         padding-left: 50px;
