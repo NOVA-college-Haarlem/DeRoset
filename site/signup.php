@@ -18,7 +18,7 @@
         display: block;
         margin-bottom: 8px;
     }
- 
+
     input[type="text"],
     input[type="email"],
     input[type="password"],
@@ -66,7 +66,7 @@
     <input type="text" id="address" name="address" required><br>
     <input type="submit" value="Sign Up">
     <div class="login">
-        Al een account? <a href="login.php" style="">Login</a>
+        Al een account? <a href="login.php">Login</a>
     </div>
 </form>
 

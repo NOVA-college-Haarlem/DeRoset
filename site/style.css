@@ -16,12 +16,12 @@ nav ul {
     margin: 0;
     padding: 20px;
     overflow: hidden;
-    font-size: 30px;
+    font-size: 100%;
     background-color: #B2D2A4;
 }
 
 nav li {
-    float: left; 
+    float: left;
 }
 
 nav li a {
