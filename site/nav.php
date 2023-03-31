@@ -16,7 +16,7 @@ session_start();
 
 <style>
     .dropdown {
-        position: relative; 
+        position: relative;
         display: inline-block;
     }
 
@@ -45,11 +45,7 @@ session_start();
             <li><a href="bestel.php">Bestellen</a></li>
             <li><a href="blog.php">Blog</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <?php if(isset($_SESSION['role'])) { ?>
-                <li><a href="employeedash.php">dashboard</a></li>
-            <?php } else { ?>
-                <li><a href="winkelmandje.php">Winkelmandje</a></li>
-            <?php } ?>
+            <li><a href="winkelmandje.php">Winkelmandje</a></li>
             <div class="dropdown">
                 <?php if (isset($_SESSION['logedin'])) { ?>
                     <li>
