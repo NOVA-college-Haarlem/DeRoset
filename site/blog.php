@@ -46,18 +46,7 @@
             margin-top: 0;
         }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        img {
+        .flavor {
             display: block;
             margin: 0 auto;
             width: 200px;
@@ -93,19 +82,19 @@
         <aside>
             <h3>Smaken van de Week</h3>
             <ul>
-                <li>
+                <h>
 
-                    <a href="bestel.php"><img src="images/butter.jpg" alt="Butter Pecan"></a>
+                    <a href="bestel.php"><img class="flavor" src="images/butter.jpg" alt="Butter Pecan"></a>
                     Butter Pecan
-                </li>
-                <li>
-                    <a href="bestel.php"><img src="images/phish.jpg" alt="Phish Food"></a>
+                </h>
+                <h>
+                    <a href="bestel.php"><img class="flavor" src="images/phish.jpg" alt="Phish Food"></a>
                     Phish Food
-                </li>
-                <li>
-                    <a href="bestel.php"><img src="images/chunky.jpg" alt="chunky monkey"> </a>
+                </h>
+                <h>
+                    <a href="bestel.php"><img class="flavor" src="images/chunky.jpg" alt="chunky monkey"> </a>
                     Chunky Monkey
-                </li>
+                </h>
             </ul>
         </aside>
         <article>

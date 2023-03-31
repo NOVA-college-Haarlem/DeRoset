@@ -6,6 +6,7 @@ require 'database.php';
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <main>
     <section>
@@ -20,7 +21,7 @@ require 'database.php';
             geliefde ijswinkel met een breed assortiment aan smaken. Na het overlijden van Piet nam hun zoon Jan het
             roer over en voegde nieuwe smaken en suikervrij en lactosevrij ijs toe aan het assortiment. Vandaag de
             dag is De Roset nog steeds een populaire ijswinkel met een trouwe klantenkring.</p>
-    </section> 
+    </section>
     <section class="vision">
         <h2>Onze visie</h2>
         <p> De visie van De Roset is om de beste ambachtelijke ijservaring te bieden aan klanten,

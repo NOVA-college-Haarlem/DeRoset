@@ -1,5 +1,5 @@
 <?php
-session_start();
+@session_start();
 require 'database.php';
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
@@ -24,7 +24,6 @@ if (isset($_POST['id'])) {
     }
 }
 
-if (!empty($_SESSION['cart'])) {
 ?>
     <h2>Your Shopping Cart</h2>
     <table>
@@ -67,8 +66,8 @@ if (!empty($_SESSION['cart'])) {
         </tbody>
     </table>
 <?php
-} else {
-?>
+if (empty($_SESSION['cart'])) {
+    ?>
     <h2>Your Shopping Cart is Empty</h2>
 <?php
 }
