@@ -13,12 +13,11 @@ session_start();
 
 
 </head>
-
 <style>
     .dropdown {
         position: relative;
         display: inline-block;
-    } 
+    }
 
     .dropdown-content {
         display: none;
@@ -51,5 +50,8 @@ session_start();
                     <a href="login.php">login</a>
                 </li>
             <?php } ?>
+            <li>
+                <a href="editself.php?id=<?php echo $_SESSION['user_id'] ?>">gegevens</a>
+            </li>
         </ul>
     </nav>

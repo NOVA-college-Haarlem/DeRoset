@@ -17,14 +17,14 @@ if ($rowCount == 0) {
     session_start();
     $_SESSION['logedin'] = true;
     $_SESSION['user_id'] = $user['id'];
-    $_SESSION['email'] = $user['email']; 
+    $_SESSION['email'] = $user['email'];
     $_SESSION['firstname'] = $user['firstname'];
     $_SESSION['lastname'] = $user['lastname'];
     $_SESSION['address'] = $user['adress'];
     $_SESSION['role'] = $user['role'];
 
     if ($_SESSION['role'] == 'employee') {
-        header('Location: employeedash.php');
+        header('Location: producten.php');
     }
     if ($_SESSION['role'] == 'customer') {
         header('Location: index.php');

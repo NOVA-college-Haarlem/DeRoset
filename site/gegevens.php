@@ -21,44 +21,45 @@ $email = $user['email'];
 
 <head>
     <title>Mijn Gegevens</title>
-</head> 
-<style>
-    p {
-        padding-left: 50px;
-    }
+    <style>
+        p {
+            padding-left: 50px;
+        }
 
-    h1 {
-        padding-left: 50px;
-    }
+        h1 {
+            padding-left: 50px;
+        }
 
-    a {
-        padding-left: 50px;
-    }
+        .button {
+            display: inline-flex;
+            width: 115px;
+            height: 25px;
+            background: #94C973;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            color: black;
+            line-height: 25px;
+            margin-right: 10px;
+            margin-left: 20px
+        }
 
-    .button {
-        display: block;
-        width: 115px;
-        height: 25px;
-        background: #94C973;
-        padding: 10px;
-        text-align: center;
-        border-radius: 5px;
-        color: black;
-        line-height: 25px;
-        margin-left: 50px;
-    }
-</style>
+        .button-group {
+            display: inline-block;
+        }
+    </style>
+</head>
 
 <body>
     <h1>Welkom <?php echo $voornaam . " " . $achternaam; ?>!</h1>
     <p><strong>Adres:</strong> <?php echo $adres; ?></p>
     <p><strong>ID:</strong> <?php echo $id; ?></p>
     <p><strong>Email:</strong> <?php echo $email; ?></p>
-    <a class="button" href="logout.php" style="text-decoration:none">Uitloggen</a> <br>
-    <a class="button" href="delete.php" style="text-decoration:none">delete</a>
-
-
-
+    <div class="button-group">
+        <a class="button" href="logout.php" style="text-decoration:none">Uitloggen</a>
+        <a class="button" href="delete.php" style="text-decoration:none">Delete</a>
+        <a class="button" href="editself.php?id=<?php echo $id ?>" style=" text-decoration:none">bewerk</a>
+    </div>
 </body>
 
 </html>
