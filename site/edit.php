@@ -66,17 +66,12 @@
     <h1>Edit User</h1>
     <?php
     require 'database.php';
-    // Retrieve the user ID from the URL parameter
     $id = $_GET['id'];
-    // Retrieve the user data from the database based on the ID
     $stmt = $conn->prepare("SELECT * FROM user WHERE id = :id");
     $stmt->execute(['id' => $id]);
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    // Retrieve the user data from the database based on the ID
-    // Your PHP code to retrieve user data from the database
 
     if ($row) {
-        // If the user exists, display the edit form with the user data
     ?>
         <form method="post" action="update.php">
             <input type="hidden" name="id" value="<?php echo htmlspecialchars($row['id']); ?>">
@@ -92,7 +87,6 @@
         </form>
     <?php
     } else {
-        // If the user does not exist, display an error message
         echo "User not found.";
     }
     ?>

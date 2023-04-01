@@ -6,8 +6,6 @@ $stmt = $conn->prepare("SELECT * FROM ice_cream");
 $stmt->execute();
 $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $flavor = $stmt->fetchAll();
-
-var_dump($_SESSION['cart']);
 ?>
 
 <!DOCTYPE html>
@@ -67,7 +65,7 @@ var_dump($_SESSION['cart']);
     <div class="grid-container">
     <div class="cart">
             <h2>Shopping Cart</h2>
-            <iframe src="cart.php"></iframe>
+            <iframe title="cart" src="cart.php"></iframe>
         </div>
         <button id="cart-button">Cart: <span id="cart-count"><?php echo count($_SESSION['cart']) ?></span> items</button>
         
@@ -100,5 +98,5 @@ var_dump($_SESSION['cart']);
         });
     </script>
 </body>
-
+<?php var_dump($_SESSION);?>
 </html>

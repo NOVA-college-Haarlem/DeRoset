@@ -48,6 +48,7 @@ $flavor = $stmt->fetch();
         <img src="<? echo $flavor['image'] ?>" alt="Ice Cream Flavor">
         <h1> <?php echo $flavor['flavor'] ?></h1>
         <p> <?php echo $flavor['description'] ?> </p>
+        <p> <?php echo $flavor['brand'] ?> </p>
         <p> €<?php echo $flavor['price']; ?>/L </p>
     </div>
 </body>

@@ -65,6 +65,7 @@ if (isset($_POST['id'])) {
             ?>
         </tbody>
     </table>
+    <a <?php if(isset($_SESSION['logedin'])) { ?> href="checkout.php" <?php } else { ?> href="login.php" <?php } ?> target="bestel.php"><button> check out </button></a>
 <?php
 if (empty($_SESSION['cart'])) {
     ?>

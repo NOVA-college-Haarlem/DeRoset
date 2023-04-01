@@ -45,7 +45,6 @@ session_start();
             <li><a href="bestel.php">Bestellen</a></li>
             <li><a href="blog.php">Blog</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="winkelmandje.php">Winkelmandje</a></li>
             <div class="dropdown">
                 <?php if (isset($_SESSION['logedin'])) { ?>
                     <li>
