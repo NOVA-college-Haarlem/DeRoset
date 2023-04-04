@@ -5,9 +5,7 @@ header('location:index.php');
 $sql = "
   INSERT INTO bestelling (user_id, adress)
   VALUES (:user_id, :adress);
-
   SET @order_id = LAST_INSERT_ID();
-
   INSERT INTO bestelling_content (product_id, order_id)
   VALUES (:product_id_1, @order_id),
          (:product_id_2, @order_id);

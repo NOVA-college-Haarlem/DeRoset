@@ -1,44 +1,40 @@
 <?php
 require 'database.php';
 include 'employeenav.php';
-$stmt = $conn->prepare("SELECT u.*, b.*, bc.*
+
+$stmt = $conn->prepare("SELECT u.*, b.*
 FROM user u
-INNER JOIN bestelling b ON b.user_id = u.id
-INNER JOIN bestelling_content bc ON bc.order_id = b.id");
+INNER JOIN bestelling b ON u.id = b.user_id WHERE status = 'aangevraagd'");  
+
 $stmt->execute();
 
 echo "<table>";
-echo "<tr><th>ID</th><th>Name</th><th>Email</th><th>role</th></tr>";
+echo "<tr><th>ID</th><th>User ID</th><th>Adres</th><th>Status</th><th>annuleer</th></tr>";
 
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     echo "<tr>";
-    echo "<td>" . htmlspecialchars($row['id']) . "</a></td>";
-    echo "<td><a href='orderinfo.php?id=" . htmlspecialchars($row['id']) . "'>" . htmlspecialchars($row['firstname']) . ' ' . htmlspecialchars($row['lastname']) . "</a></td>";
+    echo "<td>" . htmlspecialchars($row['id']) . "</td>";
+    echo "<td><a href='orderinfo.php?id=" . htmlspecialchars($row['id']) . "'>" .  htmlspecialchars($row['firstname']) . ' ' .  htmlspecialchars($row['lastname']); "</a></td>";
     echo "<td>" . htmlspecialchars($row['adress']) . "</td>";
-    echo "<td>";
-    echo "</td>";
+    echo "<td>
+            <form method='POST' action='updatestatus.php?id=" . htmlspecialchars($row['id']) . "'>
+              <input type='hidden' name='id' value='" . htmlspecialchars($row['id']) . "'>
+              <label for='status'>Status:</label>
+              <select name='status' id='status'>
+                <option value='aangevraagd'>aangevraagd</option>
+                <option value='voltooid'>voltooid</option>
+              </select>
+              <input type='submit' value='Update'>
+            </form>
+          </td>";
+          echo "<td> <a href='deleteorder.php?id=" . htmlspecialchars($row['id']). "'>annuleer</a></td>";
     echo "</tr>";
 }
 
 echo "</table>";
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
 <style>
-    /* Define the style for the table */
     table {
         border-collapse: collapse;
         width: 100%;
