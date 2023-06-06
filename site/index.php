@@ -1,67 +1,36 @@
-<?php
-include 'nav.php';
-require 'database.php';
-?>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drainpedia</title>
+    <link rel="stylesheet" href="index.css"> 
 </head>
-<main>
-    <section>
-        <h1>Over Ons</h1>
-        <p>De Roset is een ijswinkel die gespecialiseerd is in ambachtelijk ijs gemaakt van de beste ingrediënten.
-        </p>
-    </section>
-    <section class="history">
-        <h2>Onze geschiedenis</h2>
-        <p> De Roset is in 1985 opgericht door Piet en Maria Roset, die begonnen met het maken van hun eigen
-            ijsrecepten in hun huis. Na het openen van een eigen ijswinkel groeide De Roset uit tot een bekende en
-            geliefde ijswinkel met een breed assortiment aan smaken. Na het overlijden van Piet nam hun zoon Jan het
-            roer over en voegde nieuwe smaken en suikervrij en lactosevrij ijs toe aan het assortiment. Vandaag de
-            dag is De Roset nog steeds een populaire ijswinkel met een trouwe klantenkring.</p>
-    </section>
-    <section class="vision">
-        <h2>Onze visie</h2>
-        <p> De visie van De Roset is om de beste ambachtelijke ijservaring te bieden aan klanten,
-            terwijl we tegelijkertijd een gevoel van verbondenheid en duurzaamheid creëren.
-            We zetten ons in voor uitmuntendheid in alles wat we doen, van het kiezen van de beste
-            ingrediënten tot het ondersteunen van lokale boeren en leveranciers. We willen niet alleen heerlijk ijs maken,
-            maar ook een positieve impact hebben op de wereld om ons heen.
-        </p>
-    </section>
-    <section class="team">
-        <h2>Ons team</h2>
-        <section class="employee">
-            <img src="images/Destroy Lonely.jpg" alt="Medewerker 1">
-            <div class="beschrijving">
-                <h3>Destroy lonely</h3>
-                <p>Na een gefaalde carriere bij OPIUM*, kwam Destroy Lonely ons helpen. Hij heeft een passie voor ijs,
-                    muziek en Rick Owens!
-                </p>
-
-            </div>
-        </section>
-
-    </section>
-    <div class="employee">
-        <img src="images/James Wazhou.jpg" alt="Medewerker 2">
-        <div class="beschrijving">
-
-            <h3>James Wazhou </h3>
-            <p>Gered uit china, is james een echte snoepkont! Als uitvinder van de Chunky Monkey smaak lust james er
-                wel pap van!</p>
-            <p>
+<body>
+    <header>
+        <h1>Welcome to Drainpedia!</h1>
+    </header>
+    
+    <main>
+        <div class="item">
+            <h2>Bladee</h2>
+            <img src="https://i.ytimg.com/vi/h-vjJHO9-RU/maxresdefault.jpg" alt="Ecco2k">
+            <p>Bladee is a Swedish rapper and singer-songwriter, known for his unique style and collaborations with Drain Gang members.</p>
         </div>
-    </div>
-    <div class="box3">
-        <img class="box3-content" src="images/STORE.jpeg" alt="Store">
-    </div>
-</main>
-<footer>
-    <p>&copy; De Roset 2023</p>
-</footer>
+        
+        <div class="item">
+            <h2>Ecco2k</h2>
+            <img src="https://images.genius.com/0d46b3d27e0b85bd6651c73eccde9f42.1000x1000x1.jpg" alt="Ecco2k">
+            <p>Ecco2k is a Swedish rapper, singer, and producer, known for his diverse musical style and contributions to Drain Gang.</p>
+        </div>
+        
+        <div class="item">
+            <h2>Thaiboy Digital</h2>
+            <img src="https://i.redd.it/ysaf22fs6sz71.jpg" alt="Thaiboy Digital">
+            <p>Thaiboy Digital is a Thai-Swedish rapper and member of Drain Gang, known for his energetic and charismatic performances.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Drain Gang Wiki. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
