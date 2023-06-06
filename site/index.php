@@ -6,6 +6,7 @@
 </head>
 <body>
     <header>
+        <?php include 'nav.php';?>
         <h1>Welcome to Drainpedia!</h1>
     </header>
     
